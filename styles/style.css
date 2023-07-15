@@ -6,13 +6,19 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
     font-family: 'Work Sans', sans-serif;
+   
 }
 
 .btn-primary{
     width: 11.25rem; 
     height: 4rem; 
     background: #FF900E; 
-    border: 1px solid black;
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    border: none;
     border-radius: 8px;
 }
 /* Header Part Style */
@@ -69,4 +75,82 @@ Ex: 16*1=1rem  16*2=2rem  so 1rem=16px */
     font-size: 1rem;
     font-family: Work Sans;
     font-weight: 400;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media query */
+/* Mobile Device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Tablet on Medium Device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+}
+
+/* Main Part styles */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* teams Style */
+
+.teams-container{
+    display: flex;
+    align-items: center;
+    
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 45px;
+}
+
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+.teams-title{
+   
+    font-size: 2.8rem;  
+   
+}
+
+.teams-description{
+    color: #727272;
+    font-size: 1rem;
+    font-family: Work Sans;
+    font-weight: 400;
+} 
+
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-feature{
+    color: #FF900E;
+    font-weight: 700;
 }
